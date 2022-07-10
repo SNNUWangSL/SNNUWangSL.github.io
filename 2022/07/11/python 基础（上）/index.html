@@ -5,19 +5,16 @@
 <head>
     <meta charset="utf-8">
     <meta name="keywords" content="SNNUWangSL">
-    <meta name="description" content="-–
-title: python 基础（上）date: 2022-04-29 14:30:13tags:
-
-python
-
--–
-python基础入门（上）
-
-
-python 基础（上）##变量
+    <meta name="description" content="#python 基础（上）
+##变量
 ###变量规则
 变量 &amp;#x3D; 值
-变量">
+变量名不能以数字开头却可以用数字结尾
+变量名由多个单词组成多个，建议”_”链接
+变量名区分大小写 如：
+box_width = 3
+box_height = 4
+">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
     <meta name="renderer" content="webkit|ie-stand|ie-comp">
@@ -475,16 +472,8 @@ python 基础（上）##变量
 
         <div class="card-content article-card-content">
             <div id="articleContent">
-                <p>-–</p>
-<p>title: python 基础（上）<br>date: 2022-04-29 14:30:13<br>tags:</p>
-<ul>
-<li>python</li>
-</ul>
-<p>-–</p>
-<p>python基础入门（上）</p>
-<span id="more"></span>
-
-<h1 id="python-基础（上）"><a href="#python-基础（上）" class="headerlink" title="python 基础（上）"></a>python 基础（上）</h1><p>##变量</p>
+                <p>#python 基础（上）</p>
+<p>##变量</p>
 <p>###变量规则</p>
 <p>变量 &#x3D; 值</p>
 <p>变量名不能以数字开头却可以用数字结尾</p>
@@ -536,7 +525,8 @@ n <span class="token operator">=</span> <span class="token number">1</span>
 <span class="token keyword">else</span><span class="token punctuation">:</span>
     <span class="token keyword">print</span> <span class="token punctuation">(</span><span class="token string">"结束"</span><span class="token punctuation">)</span>
 </code></pre>
-<h3 id="for-循环嵌套"><a href="#for-循环嵌套" class="headerlink" title="for- 循环嵌套"></a>for- 循环嵌套</h3><pre class=" language-python"><code class="language-python"><span class="token comment" spellcheck="true"># python 的 for 循环嵌套 （for 里面还要 for）</span>
+<p>###for- 循环嵌套</p>
+<pre class=" language-python"><code class="language-python"><span class="token comment" spellcheck="true"># python 的 for 循环嵌套 （for 里面还要 for）</span>
 
 <span class="token comment" spellcheck="true"># 经典案例： 输出乘法口诀表</span>
 <span class="token keyword">for</span> n <span class="token keyword">in</span> range<span class="token punctuation">(</span><span class="token number">1</span><span class="token punctuation">,</span><span class="token number">10</span><span class="token punctuation">)</span><span class="token punctuation">:</span>
@@ -544,7 +534,8 @@ n <span class="token operator">=</span> <span class="token number">1</span>
         <span class="token keyword">print</span><span class="token punctuation">(</span>f<span class="token string">"&amp;#123;n&amp;#125;*&amp;#123;m&amp;#125;=&amp;#123;n*m&amp;#125;"</span> <span class="token punctuation">,</span>end <span class="token operator">=</span> <span class="token string">" "</span><span class="token punctuation">)</span>
     <span class="token keyword">print</span><span class="token punctuation">(</span><span class="token punctuation">)</span>
 </code></pre>
-<h3 id="while-循环嵌套"><a href="#while-循环嵌套" class="headerlink" title="while-循环嵌套"></a>while-循环嵌套</h3><pre class=" language-python"><code class="language-python"><span class="token comment" spellcheck="true"># 经典案例 ： while 输出乘法口诀表</span>
+<p>###while-循环嵌套</p>
+<pre class=" language-python"><code class="language-python"><span class="token comment" spellcheck="true"># 经典案例 ： while 输出乘法口诀表</span>
 
 n <span class="token operator">=</span> <span class="token number">1</span>
 <span class="token keyword">while</span> n <span class="token operator">&lt;=</span> <span class="token number">9</span><span class="token punctuation">:</span>
@@ -555,7 +546,8 @@ n <span class="token operator">=</span> <span class="token number">1</span>
     n <span class="token operator">=</span> n <span class="token operator">+</span> <span class="token number">1</span>
     <span class="token keyword">print</span><span class="token punctuation">(</span><span class="token punctuation">)</span>
 </code></pre>
-<h3 id="for-while-嵌套"><a href="#for-while-嵌套" class="headerlink" title="for-while -嵌套"></a>for-while -嵌套</h3><pre class=" language-python"><code class="language-python"><span class="token comment" spellcheck="true"># 经典案例 ： while + for 输出乘法口诀表</span>
+<p>###for-while -嵌套</p>
+<pre class=" language-python"><code class="language-python"><span class="token comment" spellcheck="true"># 经典案例 ： while + for 输出乘法口诀表</span>
 
 n <span class="token operator">=</span> <span class="token number">1</span>
 <span class="token keyword">while</span> n <span class="token operator">&lt;=</span> <span class="token number">9</span><span class="token punctuation">:</span>
@@ -564,7 +556,8 @@ n <span class="token operator">=</span> <span class="token number">1</span>
     n <span class="token operator">=</span> n <span class="token operator">+</span> <span class="token number">1</span>
     <span class="token keyword">print</span><span class="token punctuation">(</span><span class="token punctuation">)</span>
 </code></pre>
-<h3 id="break-循环控制"><a href="#break-循环控制" class="headerlink" title="break-循环控制"></a>break-循环控制</h3><pre class=" language-python"><code class="language-python"><span class="token comment" spellcheck="true"># 循环控制： break ，结束整个循环</span>
+<p>###break-循环控制</p>
+<pre class=" language-python"><code class="language-python"><span class="token comment" spellcheck="true"># 循环控制： break ，结束整个循环</span>
 
 <span class="token keyword">while</span> <span class="token boolean">True</span><span class="token punctuation">:</span>
     s <span class="token operator">=</span> input<span class="token punctuation">(</span><span class="token string">"输入0退出:"</span><span class="token punctuation">)</span>
@@ -572,7 +565,8 @@ n <span class="token operator">=</span> <span class="token number">1</span>
         <span class="token keyword">break</span>
     <span class="token keyword">print</span><span class="token punctuation">(</span><span class="token string">"你输入的是："</span><span class="token punctuation">,</span> s<span class="token punctuation">)</span>
 </code></pre>
-<h3 id="continue-循环控制"><a href="#continue-循环控制" class="headerlink" title="continue-循环控制"></a>continue-循环控制</h3><pre class=" language-python"><code class="language-python"><span class="token comment" spellcheck="true"># 循环控制：contine</span>
+<p>###continue-循环控制</p>
+<pre class=" language-python"><code class="language-python"><span class="token comment" spellcheck="true"># 循环控制：contine</span>
 <span class="token comment" spellcheck="true"># contine : 跳过后面的代码，立刻直接进入下一轮循环</span>
 
 <span class="token keyword">for</span> n <span class="token keyword">in</span> <span class="token punctuation">[</span><span class="token number">1</span><span class="token punctuation">,</span> <span class="token number">2</span><span class="token punctuation">,</span> <span class="token number">3</span><span class="token punctuation">,</span> <span class="token number">4</span><span class="token punctuation">,</span> <span class="token number">5</span><span class="token punctuation">,</span> <span class="token number">6</span><span class="token punctuation">]</span><span class="token punctuation">:</span>
@@ -581,7 +575,8 @@ n <span class="token operator">=</span> <span class="token number">1</span>
     <span class="token keyword">print</span><span class="token punctuation">(</span>n<span class="token punctuation">)</span>
    
 </code></pre>
-<h3 id="案例一-猜数字"><a href="#案例一-猜数字" class="headerlink" title="案例一-猜数字"></a>案例一-猜数字</h3><pre class=" language-python"><code class="language-python"><span class="token comment" spellcheck="true">#在1-100之间随机产生一个整数。让用户反复猜测</span>
+<p>###案例一-猜数字</p>
+<pre class=" language-python"><code class="language-python"><span class="token comment" spellcheck="true">#在1-100之间随机产生一个整数。让用户反复猜测</span>
 <span class="token comment" spellcheck="true">#只提示“猜大了”还是“猜小了”</span>
 <span class="token comment" spellcheck="true">#猜对结束游戏</span>
 
@@ -600,7 +595,8 @@ m <span class="token operator">=</span> random<span class="token punctuation">.<
         <span class="token keyword">print</span><span class="token punctuation">(</span><span class="token string">"猜对了"</span><span class="token punctuation">)</span>
         <span class="token keyword">break</span>
 </code></pre>
-<h3 id="案例二-猜数字-进阶"><a href="#案例二-猜数字-进阶" class="headerlink" title="案例二 猜数字-进阶"></a>案例二 猜数字-进阶</h3><pre class=" language-python"><code class="language-python"><span class="token comment" spellcheck="true">#在1-100之间随机产生一个整数。让用户反复猜测</span>
+<p>###案例二 猜数字-进阶</p>
+<pre class=" language-python"><code class="language-python"><span class="token comment" spellcheck="true">#在1-100之间随机产生一个整数。让用户反复猜测</span>
 <span class="token comment" spellcheck="true">#只提示“猜大了”还是“猜小了”</span>
 <span class="token comment" spellcheck="true">#猜对结束游戏</span>
 
@@ -630,7 +626,8 @@ count <span class="token operator">=</span> <span class="token number">0</span> 
         <span class="token keyword">print</span><span class="token punctuation">(</span>f<span class="token string">"你猜了&amp;#123;total&amp;#125;次了,游戏结束了"</span><span class="token punctuation">)</span>
         <span class="token keyword">break</span>
 </code></pre>
-<h2 id="字符串"><a href="#字符串" class="headerlink" title="字符串"></a>字符串</h2><pre class=" language-python"><code class="language-python"><span class="token comment" spellcheck="true">#单引号和双引号效果一样</span>
+<p>##字符串</p>
+<pre class=" language-python"><code class="language-python"><span class="token comment" spellcheck="true">#单引号和双引号效果一样</span>
 <span class="token keyword">print</span><span class="token punctuation">(</span><span class="token string">"hello"</span><span class="token punctuation">)</span>
 <span class="token keyword">print</span><span class="token punctuation">(</span><span class="token string">'hello'</span><span class="token punctuation">)</span>
 
@@ -686,7 +683,8 @@ use_2 <span class="token operator">=</span> <span class="token string">"李磊"<
 <span class="token comment" spellcheck="true"># +链接多个字符</span>
 <span class="token keyword">print</span><span class="token punctuation">(</span><span class="token string">"1 "</span><span class="token operator">+</span><span class="token string">"2 "</span><span class="token operator">+</span><span class="token string">"3 "</span><span class="token punctuation">)</span>
 </code></pre>
-<h2 id="列表"><a href="#列表" class="headerlink" title="列表"></a>列表</h2><pre class=" language-python"><code class="language-python"><span class="token comment" spellcheck="true">#列表[]</span>
+<p>##列表</p>
+<pre class=" language-python"><code class="language-python"><span class="token comment" spellcheck="true">#列表[]</span>
 my_list <span class="token operator">=</span> <span class="token punctuation">[</span><span class="token number">1</span><span class="token punctuation">,</span><span class="token number">2</span><span class="token punctuation">,</span><span class="token number">3</span><span class="token punctuation">,</span><span class="token string">"4"</span><span class="token punctuation">,</span><span class="token number">5</span><span class="token punctuation">]</span>
 <span class="token keyword">print</span><span class="token punctuation">(</span>my_list<span class="token punctuation">)</span>
 </code></pre>
@@ -942,13 +940,7 @@ my_list <span class="token operator">=</span> <span class="token punctuation">[<
                 <div class="card-content article-content">
                     <div class="summary block-with-text">
                         
-                            -–
-title: python 基础（上）date: 2022-04-29 14:30:13tags:
-
-python
-
--–
-python基础入门（上）
+                            
                         
                     </div>
                     <div class="publish-info">
